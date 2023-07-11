@@ -16,9 +16,8 @@ La violencia digital es un fenómeno creciente en el mundo digital. Esta página
 
 ## Tecnologías utilizadas
 
-- HTML5
-- CSS3
-- JavaScript
+- ReactJs
+- NodeJs
 
 ## Cómo contribuir
 
