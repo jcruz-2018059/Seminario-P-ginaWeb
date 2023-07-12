@@ -1,6 +1,54 @@
 import React from 'react'
+import { Link } from "react-router-dom";
+import Swal from 'sweetalert2';
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
+import { useState, useContext } from "react";
+import { AuthContext } from "../../Index";
 
 export const LoginPage = () => {
+    const navigate = useNavigate();
+    const { setLoggedIn, loggedIn, setDataUser } = useContext(AuthContext);
+    const [form, setForm] = useState({
+        username: "",
+        password: "",
+    });
+
+    const handleChange = (e) => {
+        setForm({
+            ...form,
+            [e.target.name]: e.target.value,
+        });
+        console.log(form);
+    };
+
+    const login = async (e) => {
+        try {
+            e.preventDefault();
+            const { data } = await axios.post("http://localhost:3200/user/login", form);
+            if (data.token) {
+                console.log(data.token)
+                setLoggedIn(true);
+                localStorage.setItem("token", data.token);
+                localStorage.setItem("role", data.user.role)
+                Swal.fire({
+                    title: data.message || '¡Bienvenido!',
+                    icon: 'success',
+                    timer: 4000
+                })
+                navigate('/')
+            }
+        } catch (err) {
+            console.log(err);
+            Swal.fire({
+                title: err.response.data.message || 'Error login',
+                icon: 'error',
+                timer: 4000
+            })
+
+            throw new Error("Error login failed");
+        }
+    };
     return (
         <>
             <style>
@@ -19,12 +67,12 @@ export const LoginPage = () => {
 
                             <div className="form-outline mb-4">
                                 <label className="form-label" htmlFor="form2Example11">Usuario</label>
-                                <input type="email" id="name" className="form-control" placeholder="Usuario" name='username' />
+                                <input onChange={handleChange} type="email" id="name" className="form-control" placeholder="Usuario" name='username' />
                             </div>
 
                             <div className="form-outline mb-4">
                                 <label className="form-label" htmlFor="form2Example22">Contraseña</label>
-                                <input placeholder="Contraseña" type="password" id="form2Example22" className="form-control" name='password' />
+                                <input onChange={handleChange} placeholder="Contraseña" type="password" id="form2Example22" className="form-control" name='password' />
                             </div>
 
                             <div className="text-center pt-1 mb-5 row">
