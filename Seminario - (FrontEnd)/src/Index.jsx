@@ -7,6 +7,8 @@ import { HomePage } from './pages/LadingPage/HomePage';
 import { CasePage } from './pages/LadingPage/CasePage';
 import { ComentsPage } from './pages/LadingPage/ComentsPage';
 import { LoginPage } from './pages/LadingPage/LoginPage';
+import { PageCase } from './pages/LadingPage/Cases/PageCase';
+import { Case1 } from './pages/LadingPage/Cases/Case1';
 
 export const AuthContext = createContext();
 
@@ -41,7 +43,17 @@ export const Index = () => {
                 },
                 {
                     path: '/case',
-                    element: <CasePage></CasePage>
+                    element: <PageCase></PageCase>,
+                    children: [
+                        {
+                            path: '',
+                            element: <CasePage></CasePage>,
+                        },
+                        {
+                            path: 'caseOne',
+                            element: <Case1></Case1>
+                        }
+                    ]
                 },
                 {
                     path: '/coments',

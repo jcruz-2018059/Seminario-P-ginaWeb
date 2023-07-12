@@ -1,0 +1,137 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Seminario",
+    "dateExported": "2023-07-11T23:29:31.598Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "5a3e5a73-21b8-406d-9ac8-5a334cf51520",
+            "name": "User",
+            "containerId": "",
+            "created": "2023-07-11T22:33:13.407Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "1ee05405-bba2-43a0-b108-e2508c125917",
+            "name": "Comment",
+            "containerId": "",
+            "created": "2023-07-11T22:33:19.736Z",
+            "sortNum": 20000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "5ecb4ec2-31cd-496f-af5c-319ae128155b",
+            "colId": "bec61136-dffc-4f8e-80c1-1e2ce0121293",
+            "containerId": "5a3e5a73-21b8-406d-9ac8-5a334cf51520",
+            "name": "Login",
+            "url": "localhost:3200/user/login",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-07-11T22:33:34.500Z",
+            "modified": "2023-07-11T22:35:49.189Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "ADMINRAFAEL"
+                    },
+                    {
+                        "name": "password",
+                        "value": "ADMINRAFAEL"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "c4548195-30eb-4e1c-8cd1-4b2f51af3c1d",
+            "colId": "bec61136-dffc-4f8e-80c1-1e2ce0121293",
+            "containerId": "1ee05405-bba2-43a0-b108-e2508c125917",
+            "name": "AddComment",
+            "url": "localhost:3200/comment/add",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-07-11T22:36:08.815Z",
+            "modified": "2023-07-11T23:28:15.389Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "title",
+                        "value": "hola"
+                    },
+                    {
+                        "name": "text",
+                        "value": "asdfasdfasfd"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "f934bc52-1467-466b-8138-04789291b204",
+            "colId": "bec61136-dffc-4f8e-80c1-1e2ce0121293",
+            "containerId": "1ee05405-bba2-43a0-b108-e2508c125917",
+            "name": "getAll",
+            "url": "localhost:3200/comment/getAll",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-07-11T23:24:28.890Z",
+            "modified": "2023-07-11T23:26:31.771Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "6cc2a817-efe1-48aa-8559-68d6edef2e19",
+            "colId": "bec61136-dffc-4f8e-80c1-1e2ce0121293",
+            "containerId": "1ee05405-bba2-43a0-b108-e2508c125917",
+            "name": "serch",
+            "url": "localhost:3200/comment/serch",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-07-11T23:26:42.651Z",
+            "modified": "2023-07-11T23:27:26.884Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "como"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "f943304a-5ac8-4ba1-b409-d3a1b1171d44",
+            "colId": "bec61136-dffc-4f8e-80c1-1e2ce0121293",
+            "containerId": "1ee05405-bba2-43a0-b108-e2508c125917",
+            "name": "delete",
+            "url": "localhost:3200/comment/delete/64ade4a2cadc5af845010155",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2023-07-11T23:27:40.000Z",
+            "modified": "2023-07-11T23:29:15.968Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NGFkZDkwNzI4ZDVhYjZmNGI5MThjOTIiLCJ1c2VybmFtZSI6IkFETUlOUkFGQUVMIiwicGFzc3dvcmQiOiIkMmIkMTAkaFJ5bWtYQ3lqTDJLMk9uMmlVZk84ZUI0OVBxbUhXOGVGOEN6bFJHYkF3V05TSkxuZUtLQ08iLCJpYXQiOjE2ODkxMTgwNzEsImV4cCI6MTY4OTEyNTI3MX0.iwvVqTX8mW8Pf1VaNpjV93U_3oO_u0QVy6gNqQuaOMM"
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
