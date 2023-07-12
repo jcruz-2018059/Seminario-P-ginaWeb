@@ -30,30 +30,31 @@ exports.getAllComments = async(req, res)=>{
     }
 }
 
-exports.serchComments = async(req, res)=>{
-    try{
-        const data = req.body
-        let comments = await Comment.find({
-            //validar busqueda por titulo y por texto
-            $or: [ 
-                { 
-                    title: {
-                        $regex: data.name,
-                        $options: 'i'
-                    }
-                }, { 
-                    text: {
-                        $regex: data.name,
-                        $options: 'i'
-                    }
-                } ] 
-        });
-        return res.send({comments});
-    }catch(err){
-        console.error(err);
-        return res.status(500).send({message: 'Error getting Comments'})
+exports.serchComments = async (req, res) => {
+    try {
+      const name = req.query.name; // Acceder a req.query en lugar de req.body
+      let comments = await Comment.find({
+        $or: [
+          {
+            title: {
+              $regex: name,
+              $options: 'i',
+            },
+          },
+          {
+            text: {
+              $regex: name,
+              $options: 'i',
+            },
+          },
+        ],
+      });
+      return res.send({ comments });
+    } catch (err) {
+      console.error(err);
+      return res.status(500).send({ message: 'Error getting Comments' });
     }
-}
+  };
 
 exports.deleteComment = async(req, res)=>{
     try{

@@ -7,7 +7,7 @@ const { ensureAuth } = require('../services/jwt')
 
 api.post('/add', commentController.addComment);
 api.get('/getAll', commentController.getAllComments);
-api.get('/serch', commentController.serchComments);
+api.get('/search', commentController.serchComments);
 api.delete('/delete/:id', ensureAuth, commentController.deleteComment);
 
 module.exports = api;

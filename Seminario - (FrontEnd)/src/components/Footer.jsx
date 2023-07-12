@@ -9,17 +9,15 @@ const Footer = () => {
             <h5 className="text-white normal-text">Seminario</h5>
           </div>
           <div className="col-lg-6 col-md-12 mb-4 mb-md-0">
-            <h5 className="text-uppercase text-white">Footer text</h5>
+            <h5 className="text-uppercase text-white">Violencia Digital</h5>
             <p className="text-white">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
-              molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
-              aliquam voluptatem veniam, est atque cumque eum delectus sint!
+              Juntos podemos marcar la diferencia y construir una sociedad en la que todos puedan estudiar y conectarse en un ambiente seguro y libre de violencia. Únete a nosotros en la lucha contra la violencia escolar y cibernética. ¡Di NO a la violencia y sí a la empatía!
             </p>
           </div>
         </div>
       </div>
       <div className="text-center p-3" style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
-        <a className="text-white">© 2020-2023</a>
+        <a className="text-white">© 2023 </a>
         <a className="text-white">Seminario.com</a>
       </div>
     </footer>

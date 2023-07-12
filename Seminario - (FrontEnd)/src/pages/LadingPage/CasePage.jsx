@@ -1,5 +1,6 @@
 import React from 'react'
 import Footer from '../../components/Footer'
+import { Link } from 'react-router-dom'
 
 export const CasePage = () => {
     return (
@@ -29,10 +30,10 @@ export const CasePage = () => {
                             <h3 className="mb-0">Caso de violencia</h3>
                             <div className="mb-1 text-body-secondary">Jul 2023</div>
                             <p className="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                            <a href="#" className="icon-link gap-1 icon-link-hover stretched-link">
+                            <Link to='caseOne' className="icon-link gap-1 icon-link-hover stretched-link">
                                 Continuar Leyendo
                                 <svg className="bi"><use xlinkHref="#chevron-right"></use></svg>
-                            </a>
+                            </Link>
                         </div>
                         <div className="col-auto d-none d-lg-block">
                             <svg className="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
@@ -46,10 +47,10 @@ export const CasePage = () => {
                             <h3 className="mb-0">Caso de violencia</h3>
                             <div className="mb-1 text-body-secondary">Jul 2023</div>
                             <p className="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                            <a href="#" className="icon-link gap-1 icon-link-hover stretched-link">
+                            <Link to='caseTwo' className="icon-link gap-1 icon-link-hover stretched-link">
                                 Continuar Leyendo
                                 <svg className="bi"><use xlinkHref="#chevron-right"></use></svg>
-                            </a>
+                            </Link>
                         </div>
                         <div className="col-auto d-none d-lg-block">
                             <svg className="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
@@ -65,10 +66,10 @@ export const CasePage = () => {
                             <h3 className="mb-0">Caso de violencia</h3>
                             <div className="mb-1 text-body-secondary">Jul 2023</div>
                             <p className="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                            <a href="#" className="icon-link gap-1 icon-link-hover stretched-link">
+                            <Link to='caseThree' className="icon-link gap-1 icon-link-hover stretched-link">
                                 Continuar Leyendo
                                 <svg className="bi"><use xlinkHref="#chevron-right"></use></svg>
-                            </a>
+                            </Link>
                         </div>
                         <div className="col-auto d-none d-lg-block">
                             <svg className="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
@@ -82,10 +83,10 @@ export const CasePage = () => {
                             <h3 className="mb-0">Caso de violencia</h3>
                             <div className="mb-1 text-body-secondary">Jul 2023</div>
                             <p className="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                            <a href="#" className="icon-link gap-1 icon-link-hover stretched-link">
+                            <Link to='caseFour' className="icon-link gap-1 icon-link-hover stretched-link">
                                 Continuar Leyendo
                                 <svg className="bi"><use xlinkHref="#chevron-right"></use></svg>
-                            </a>
+                            </Link>
                         </div>
                         <div className="col-auto d-none d-lg-block">
                             <svg className="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>

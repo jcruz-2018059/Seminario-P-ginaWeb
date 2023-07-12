@@ -9,6 +9,9 @@ import { ComentsPage } from './pages/LadingPage/ComentsPage';
 import { LoginPage } from './pages/LadingPage/LoginPage';
 import { PageCase } from './pages/LadingPage/Cases/PageCase';
 import { Case1 } from './pages/LadingPage/Cases/Case1';
+import { Case2 } from './pages/LadingPage/Cases/Case2';
+import { Case3 } from './pages/LadingPage/Cases/Case3';
+import { Case4 } from './pages/LadingPage/Cases/Case4';
 
 export const AuthContext = createContext();
 
@@ -52,6 +55,18 @@ export const Index = () => {
                         {
                             path: 'caseOne',
                             element: <Case1></Case1>
+                        },
+                        {
+                            path: 'caseTwo',
+                            element: <Case2></Case2>
+                        },
+                        {
+                            path: 'caseThree',
+                            element: <Case3></Case3>
+                        },
+                        {
+                            path: 'caseFour',
+                            element: <Case4></Case4>
                         }
                     ]
                 },
