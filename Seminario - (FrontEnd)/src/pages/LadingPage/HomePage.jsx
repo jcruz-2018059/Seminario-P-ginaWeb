@@ -20,7 +20,7 @@ export const HomePage = () => {
             </div>
             <div className="col-lg-6">
               <div className="masthead-device-mockup">
-                <img className="img-fluid" src="src\assets\ImageHero.png" alt="Hero" />
+                <img className="img-fluid" src="https://i.ibb.co/8YKmTQg/Image-Hero.png" alt="Hero" />
               </div>
             </div>
           </div>
@@ -47,7 +47,7 @@ export const HomePage = () => {
             <p className="lead hero-text">La violencia cibernética es el uso de la tecnología y las plataformas en línea para acosar, intimidar, difamar o causar daño a otras personas. Se manifiesta a través de amenazas, difusión de contenido ofensivo, acoso en redes sociales, ciberbullying, suplantación de identidad y otras formas de comportamiento agresivo en línea.</p>
           </div>
           <div className="col-10 col-sm-8 col-lg-6">
-            <img src="src\assets\Imagen2.png" className="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy" />
+            <img src="https://i.ibb.co/7C5HN2M/Imagen2.png" className="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy" />
           </div>
         </div>
       </div>
@@ -55,7 +55,7 @@ export const HomePage = () => {
       <div className="container col-xxl-8">
         <div className="row flex-lg-row-reverse align-items-center g-5 py-5">
           <div className="col-10 col-sm-8 col-lg-6 d-none d-lg-block">
-            <img src="src\assets\Imagen1.png" className="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy" />
+            <img src="https://i.ibb.co/BG0StBF/Imagen1.png" className="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy" />
           </div>
           <div className="col-lg-6 text-end">
             <h4 style={{ fontSize: '20px' }}>¿Cómo?</h4>

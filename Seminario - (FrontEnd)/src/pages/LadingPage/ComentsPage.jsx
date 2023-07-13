@@ -112,7 +112,7 @@ export const ComentsPage = () => {
                                         <input type='text' className="form-control form-control-lg" id="name" placeholder="Buscar Comentario" />
                                     </div>
                                     <div className="col-auto">
-                                        <button onClick={(e) => { search(), e.preventDefault() }} className="btn btn-primary btn-lg ">Búscar</button>
+                                        <button onClick={(e) => { search(), e.preventDefault() }} className="btn btn-primary btn-lg ">Buscar</button>
                                     </div>
                                 </div>
 
